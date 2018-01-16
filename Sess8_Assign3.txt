@@ -1,0 +1,38 @@
+
+
+Tasks
+
+a. Find the probability that X is equal to 17
+> x<-17
+> n<-31
+> p<-.44
+> dbinom(x,n,p)
+[1] 0.06868672
+
+b. Find the probability that X is at most 13
+
+> x<-13
+> pbinom(x,n,p)
+[1] 0.4827758
+
+c. Find the probability that X is bigger than 11.
+
+> x<-11
+> 1-pbinom(x,n,p)
+[1] 0.7794649
+
+d. Find the probability that X is at least 15.
+
+> x<-15
+> ppois(x,n,lower.tail = FALSE)
+[1] 0.9988586
+
+e. Find the probability that X is between 16 and 19, inclusive
+
+> x<-16
+> y<-19
+> runif(n,x,y)
+ [1] 18.02434 16.18406 17.32764 16.47822 17.45061 17.43549 16.16116 18.64842 16.54918
+[10] 18.66261 18.42275 18.13119 16.31087 16.40613 18.81015 18.21750 16.20700 17.14038
+[19] 17.79433 16.47287 17.74607 16.90233 17.91694 17.38391 17.76874 18.32919 16.88985
+[28] 17.86265 18.02587 18.29617 18.01138
